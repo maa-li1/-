@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LiveCode Export</title>
+    
+    <!-- ============================================ -->
+    <!-- CSS CODE (from the CSS editor)               -->
+    <!-- ============================================ -->
+    <style>
+
+    </style>
+    <!-- ============================================ -->
+    
+</head>
+<body>
+    <!-- ============================================ -->
+    <!-- HTML CODE (from the HTML editor)             -->
+    <!-- ============================================ -->
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>استمارة التسجيل بالعمولة | المعالي للخدمات الشاملة</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            gold: '#b89230',       /* الذهبي الفاخر من الشعار */
+                            goldDark: '#937220',   /* درجات الذهبي الداكنة */
+                            olive: '#59602e',      /* الأخضر الزيتوني */
+                            oliveDark: '#3e4420',  /* الأخضر الزيتوني الداكن */
+                            dark: '#212918',       /* الأخضر الداكن الشبيه بالأسود */
+                            light: '#f9f9f6',      /* الخلفية الفاتحة الرخامية */
+                            accent: '#d4af37'
+                        }
+                    },
+                    fontFamily: {
+                        tajawal: ['Tajawal', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Tajawal', sans-serif;
+            background-color: #f4f4f0;
+            background-image: radial-gradient(#d4af37 0.5px, transparent 0.5px), radial-gradient(#59602e 0.5px, #f4f4f0 0.5px);
+            background-size: 20px 20px;
+            background-position: 0 0, 10px 10px;
+        }
+        .gold-gradient-bg {
+            background: linear-gradient(135deg, #212918 0%, #3e4420 50%, #59602e 100%);
+        }
+        .gold-text-gradient {
+            background: linear-gradient(135deg, #e5c158 0%, #b89230 50%, #fef1c9 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gold-border-gradient {
+            border-image: linear-gradient(to bottom, #b89230, #59602e) 1;
+        }
+        .input-style {
+            transition: all 0.3s ease;
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+        .input-style:focus {
+            border-color: #b89230;
+            box-shadow: 0 0 0 3px rgba(184, 146, 48, 0.2);
+            outline: none;
+            background-color: #ffffff;
+        }
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #b89230;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #59602e;
+        }
+    </style>
+</head>
+<body class="min-h-screen text-gray-800 py-6 px-3 sm:px-6 lg:px-8 flex flex-col justify-between">
+    <div class="max-w-4xl mx-auto w-full">
+        <!-- Main Card Header -->
+        <div class="gold-gradient-bg rounded-t-2xl shadow-2xl p-6 sm:p-8 text-white relative overflow-hidden border-b-4 border-brand-gold">
+            <div class="absolute -right-10 -bottom-10 opacity-10 pointer-events-none">
+                <i class="fa-solid fa-crown text-9xl text-white"></i>
+            </div>
+            
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6 relative z-10">
+                <div class="flex items-center gap-4 text-center md:text-right">
+                    <!-- Displaying the Logo SVG matching the user image -->
+                    <div class="w-24 h-24 sm:w-28 sm:h-28 bg-white/10 backdrop-blur-md p-2 rounded-2xl border border-brand-gold/40 flex items-center justify-center shadow-lg shrink-0">
+                        <svg viewBox="0 0 500 500" class="w-full h-full drop-shadow-md">
+                            <!-- Background Shield Base -->
+                            <path d="M250,420 C180,380 140,320 140,200 L140,150 L250,110 L360,150 L360,200 C360,320 320,380 250,420 Z" fill="none" stroke="#59602e" stroke-width="22" stroke-linejoin="round" />
+                            <!-- Crown Top -->
+                            <path d="M150,130 L190,80 L250,140 L310,80 L350,130 Z" fill="none" stroke="#b89230" stroke-width="20" stroke-linejoin="round" />
+                            <!-- Arrow / Swirl Element -->
+                            <path d="M190,360 C230,300 210,220 340,90" fill="none" stroke="#59602e" stroke-width="22" stroke-linecap="round" />
+                            <path d="M300,90 L340,90 L340,130" fill="none" stroke="#59602e" stroke-width="22" stroke-linecap="round" stroke-linejoin="round" />
+                            <!-- Inner Crown Details -->
+                            <circle cx="250" cy="180" r="15" fill="#b89230" />
+                        </svg>
+                    </div>
+                    <div>
+                        <span class="inline-block px-3 py-1 bg-brand-gold/20 text-brand-gold rounded-full text-xs font-bold mb-2 border border-brand-gold/30">
+                            برنامج الشركاء والمسوقين
+                        </span>
+                        <h1 class="text-2xl sm:text-3xl font-black text-white leading-tight">
+                            المعالي للخدمات الشاملة
+                        </h1>
+                        <p class="text-gray-300 text-sm sm:text-base mt-1">
+                            استمارة الانضمام لنظام التسويق بالعمولة
+                        </p>
+                    </div>
+                </div>
+                <div class="text-center md:text-left border-t md:border-t-0 md:border-r border-white/10 pt-4 md:pt-0 md:pr-6">
+                    <p class="text-xs text-gray-300">للتواصل والدعم الفني</p>
+                    <a href="https://wa.me/966510449281" target="_blank" class="inline-flex items-center gap-2 text-brand-gold hover:text-white font-bold text-lg mt-1 dir-ltr transition-colors">
+                        <i class="fa-brands fa-whatsapp text-emerald-400 text-xl"></i>
+                        <span>+966 51 044 9281</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <form id="affiliateForm" onsubmit="submitForm(event)" class="bg-white rounded-b-2xl shadow-xl p-6 sm:p-10 border-x border-b border-gray-200 space-y-10">
+            <!-- Intro Text -->
+            <div class="bg-brand-light p-4 sm:p-5 rounded-xl border-r-4 border-brand-gold text-gray-700 text-sm sm:text-base leading-relaxed">
+                <p class="font-bold text-brand-dark mb-1">مرحباً بك في فريق شركاء النجاح!</p>
+                يسعدنا انضمامك معنا. يرجى تعبئة الاستمارة التالية بدقة لضمان تفعيل حسابك وتحويل عمولاتك بشكل صحيح وسريع.
+            </div>
+            <!-- SECTION 1: MANDATORY INFORMATION -->
+            <div class="space-y-6">
+                <div class="flex items-center gap-3 border-b-2 border-brand-gold/20 pb-3">
+                    <div class="w-8 h-8 rounded-lg bg-brand-olive text-white flex items-center justify-center font-bold text-sm">
+                        1
+                    </div>
+                    <h2 class="text-xl font-bold text-brand-dark">
+                        البيانات الأساسية <span class="text-red-500 text-sm font-normal">(إلزامية)</span>
+                    </h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Full Name -->
+                    <div>
+                        <label class="block text-sm font-bold text-gray-700 mb-2" for="fullName">
+                            الاسم الكامل <span class="text-red-500">*</span>
+                        </label>
+                        <div class="relative">
+                            <span class="absolute inset-y-0 right-0 flex items-center pr-3.5 pointer-events-none text-gray-400">
+                                <i class="fa-solid fa-user"></i>
+                            </span>
+                            <input type="text" id="fullName" required placeholder="أدخل اسمك الثلاثي أو الرباعي" 
+                                   class="input-style w-full pr-10 pl-4 py-3 border border-gray-300 rounded-xl text-gray-800 text-sm">
+                        </div>
+                    </div>
+                    <!-- Phone Number -->
+                    <div>
+                        <label class="block text-sm font-bold text-gray-700 mb-2" for="phone">
+                            رقم الجوال (الواتساب) <span class="text-red-500">*</span>
+                        </label>
+                        <div class="relative dir-ltr">
+                            <input type="tel" id="phone" required placeholder="05xxxxxxxx" 
+                                   class="input-style w-full pl-10 pr-4 py-3 border border-gray-300 rounded-xl text-gray-800 text-sm text-left">
+                            <span class="absolute inset-y-0 left-0 flex items-center pl-3.5 pointer-events-none text-gray-400">
+                                <i class="fa-solid fa-phone"></i>
+                            </span>
+                        </div>
+                        <p class="text-xs text-gray-500 mt-1 text-right">سيتم التواصل وتأكيد الحساب عبر هذا الرقم</p>
+                    </div>
+                    <!-- Nationality -->
+                    <div>
+                        <label class="block text-sm font-bold text-gray-700 mb-2" for="nationality">
+                            الجنسية <span class="text-red-500">*</span>
+                        </label>
+                        <div class="relative">
+                            <span class="absolute inset-y-0 right-0 flex items-center pr-3.5 pointer-events-none text-gray-400">
+                                <i class="fa-solid fa-flag"></i>
+                            </span>
+                            <input type="text" id="nationality" required placeholder="مثال: سعودي / مقيم..." 
+                                   class="input-style w-full pr-10 pl-4 py-3 border border-gray-300 rounded-xl text-gray-800 text-sm">
+                        </div>
+                    </div>
+                    <!-- Age -->
+                    <div>
+                        <label class="block text-sm font-bold text-gray-700 mb-2" for="age">
+                            العمر <span class="text-red-500">*</span>
+                        </label>
+                        <div class="relative">
+                            <span class="absolute inset-y-0 right-0 flex items-center pr-3.5 pointer-events-none text-gray-400">
+                                <i class="fa-solid fa-cake-candles"></i>
+                            </span>
+                            <input type="number" id="age" min="18" max="90" required placeholder="مثال: 25" 
+                                   class="input-style w-full pr-10 pl-4 py-3 border border-gray-300 rounded-xl text-gray-800 text-sm">
+                        </div>
+                    </div>
+                    <!-- IBAN Number -->
+                    <div class="md:col-span-2">
+                        <label class="block text-sm font-bold text-gray-700 mb-2" for="iban">
+                            رقم الآيبان (IBAN) لتحويل الأرباح <span class="text-red-500">*</span>
+                        </label>
+                        <div class="relative dir-ltr">
+                            <input type="text" id="iban" required placeholder="SA0000000000000000000000" uppercase
+                                   class="input-style w-full pl-10 pr-4 py-3 border border-gray-300 rounded-xl text-gray-800 text-sm font-mono tracking-wider uppercase text-left">
+                            <span class="absolute inset-y-0 left-0 flex items-center pl-3.5 pointer-events-none text-gray-400">
+                                <i class="fa-solid fa-building-columns"></i>
+                            </span>
+                        </div>
+                        <p class="text-xs text-gray-500 mt-1 text-right">يرجى التأكد من أن رقم الآيبان يبدأ بـ SA ويتكون من 24 خانة</p>
+                    </div>
+                </div>
+            </div>
+            <!-- SECTION 2: SOCIAL MEDIA LINKS -->
+            <div class="space-y-6 pt-4">
+                <div class="flex items-center gap-3 border-b-2 border-brand-gold/20 pb-3">
+                    <div class="w-8 h-8 rounded-lg bg-brand-gold text-white flex items-center justify-center font-bold text-sm">
+                        2
+                    </div>
+                    <div>
+                        <h2 class="text-xl font-bold text-brand-dark">
+                            حسابات التواصل الاجتماعي 
+                            <span class="text-gray-500 text-sm font-normal">(اختيارية)</span>
+                        </h2>
+                        <p class="text-xs text-gray-500">ضِع روابط حساباتك النشطة لتعزيز فرص قبول طلبك بشكل أسرع</p>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <!-- X / Twitter -->
+                    <div>
+                        <label class="block text-xs font-bold text-gray-600 mb-1">منصة إكس (تويتر)</label>
+                        <div class="relative dir-ltr">
+                            <input type="url" id="social_x" placeholder="https://x.com/yourname" 
+                                   class="input-style w-full pl-9 pr-3 py-2.5 border border-gray-300 rounded-lg text-xs text-left">
+                            <span class="absolute inset-y-0 left-0 flex items-center pl-3 text-gray-400">
+                                <i class="fa-brands fa-x-twitter"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- Instagram -->
+                    <div>
+                        <label class="block text-xs font-bold text-gray-600 mb-1">إنستغرام (Instagram)</label>
+                        <div class="relative dir-ltr">
+                            <input type="url" id="social_instagram" placeholder="https://instagram.com/yourname" 
+                                   class="input-style w-full pl-9 pr-3 py-2.5 border border-gray-300 rounded-lg text-xs text-left">
+                            <span class="absolute inset-y-0 left-0 flex items-center pl-3 text-pink-600">
+                                <i class="fa-brands fa-instagram"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- TikTok -->
+                    <div>
+                        <label class="block text-xs font-bold text-gray-600 mb-1">تيك توك (TikTok)</label>
+                        <div class="relative dir-ltr">
+                            <input type="url" id="social_tiktok" placeholder="https://tiktok.com/@yourname" 
+                                   class="input-style w-full pl-9 pr-3 py-2.5 border border-gray-300 rounded-lg text-xs text-left">
+                            <span class="absolute inset-y-0 left-0 flex items-center pl-3 text-black">
+                                <i class="fa-brands fa-tiktok"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- Snapchat -->
+                    <div>
+                        <label class="block text-xs font-bold text-gray-600 mb-1">سناب شات (Snapchat)</label>
+                        <div class="relative dir-ltr">
+                            <input type="url" id="social_snapchat" placeholder="https://snapchat.com/add/yourname" 
+                                   class="input-style w-full pl-9 pr-3 py-2.5 border border-gray-300 rounded-lg text-xs text-left">
+                            <span class="absolute inset-y-0 left-0 flex items-center pl-3 text-yellow-500">
+                                <i class="fa-brands fa-snapchat"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- YouTube -->
+                    <div>
+                        <label class="block text-xs font-bold text-gray-600 mb-1">يوتيوب (YouTube)</label>
+                        <div class="relative dir-ltr">
+                            <input type="url" id="social_youtube" placeholder="https://youtube.com/c/channel" 
+                                   class="input-style w-full pl-9 pr-3 py-2.5 border border-gray-300 rounded-lg text-xs text-left">
+                            <span class="absolute inset-y-0 left-0 flex items-center pl-3 text-red-600">
+                                <i class="fa-brands fa-youtube"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- Facebook -->
+                    <div>
+                        <label class="block text-xs font-bold text-gray-600 mb-1">فيسبوك (Facebook)</label>
+                        <div class="relative dir-ltr">
+                            <input type="url" id="social_facebook" placeholder="https://facebook.com/yourname" 
+                                   class="input-style w-full pl-9 pr-3 py-2.5 border border-gray-300 rounded-lg text-xs text-left">
+                            <span class="absolute inset-y-0 left-0 flex items-center pl-3 text-blue-600">
+                                <i class="fa-brands fa-facebook"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- SECTION 3: PRODUCT LINKS (10 INPUTS) & NOTES -->
+            <div class="space-y-6 pt-4">
+                <div class="flex items-center gap-3 border-b-2 border-brand-gold/20 pb-3">
+                    <div class="w-8 h-8 rounded-lg bg-brand-oliveDark text-white flex items-center justify-center font-bold text-sm">
+                        3
+                    </div>
+                    <div>
+                        <h2 class="text-xl font-bold text-brand-dark">
+                            المنتجات المراد التسويق لها 
+                            <span class="text-gray-500 text-sm font-normal">(اختر حتى 10 منتجات - اختيارية)</span>
+                        </h2>
+                        <p class="text-xs text-gray-500">ضِع روابط الخدمات أو المنتجات التابعة لـ "المعالي" التي ترغب في البدء بالتسويق لها</p>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <!-- Generate 10 Product Link Inputs -->
+                    <script>
+                        for(let i = 1; i <= 10; i++) {
+                            document.write(`
+                                <div>
+                                    <label class="block text-xs font-semibold text-gray-600 mb-1">رابط المنتج / الخدمة ${i}</label>
+                                    <div class="relative dir-ltr">
+                                        <input type="url" id="product_link_${i}" placeholder="https://almaali.com/product-${i}" 
+                                               class="input-style w-full pl-9 pr-3 py-2 border border-gray-300 rounded-lg text-xs text-left">
+                                        <span class="absolute inset-y-0 left-0 flex items-center pl-3 text-brand-gold">
+                                            <i class="fa-solid fa-link"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            `);
+                        }
+                    </script>
+                </div>
+                <!-- Notes Section -->
+                <div class="pt-2">
+                    <label class="block text-sm font-bold text-gray-700 mb-2" for="notes">
+                        ملاحظات إضافية <span class="text-gray-400 font-normal">(اختيارية)</span>
+                    </label>
+                    <textarea id="notes" rows="3" placeholder="أضف أي اقتراحات أو تفاصيل أخرى ترغب في مشاركتها معنا..." 
+                              class="input-style w-full p-3 border border-gray-300 rounded-xl text-gray-800 text-sm resize-none"></textarea>
+                </div>
+            </div>
+            <div class="pt-6 border-t border-gray-200">
+                <button type="submit" 
+                        class="w-full bg-gradient-to-r from-brand-olive via-brand-oliveDark to-brand-dark hover:from-brand-dark hover:to-brand-olive text-white font-bold py-4 px-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-0.5 flex items-center justify-center gap-3 text-lg cursor-pointer">
+                    <i class="fa-brands fa-whatsapp text-2xl text-emerald-400"></i>
+                    <span>إرسال الاستمارة عبر الواتساب فوراً</span>
+                </button>
+                <p class="text-center text-xs text-gray-500 mt-3">
+                    سيتم تجهيز البيانات وإرسالها مباشرة إلى رقم الإدارة دون الانتقال خارج الصفحات
+                </p>
+            </div>
+        </form>
+        <!-- Footer -->
+        <footer class="text-center py-6 text-xs text-gray-500 space-y-1">
+            <p>© جميع الحقوق محفوظة لـ <strong>المعالي للخدمات الشاملة</strong> 2026</p>
+            <p class="text-brand-gold">تصميم وتطوير نظام التسويق بالعمولة</p>
+        </footer>
+    </div>
+    <!-- SUCCESS / PREVIEW MODAL -->
+    <div id="statusModal" class="fixed inset-0 bg-black/60 backdrop-blur-sm hidden z-50 flex items-center justify-center p-4">
+        <div class="bg-white rounded-2xl max-w-lg w-full p-6 shadow-2xl border border-brand-gold/30 animate-fade-in relative">
+            <button onclick="closeModal()" class="absolute top-4 left-4 text-gray-400 hover:text-gray-600">
+                <i class="fa-solid fa-xmark text-xl"></i>
+            </button>
+            <div class="text-center space-y-3">
+                <div class="w-16 h-16 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center mx-auto text-3xl">
+                    <i class="fa-solid fa-check"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-800">تم تجهيز استمارتك بنجاح!</h3>
+                <p class="text-xs text-gray-600">سيتم فتح محادثة الواتساب المباشرة مع المعالي للخدمات الشاملة لإرسال البيانات المقيدة أدناه:</p>
+            </div>
+            <div class="my-4 bg-gray-50 p-4 rounded-xl text-right max-h-48 overflow-y-auto border border-gray-200 dir-rtl text-xs font-mono space-y-1 text-gray-700 whitespace-pre-line" id="modalMessagePreview">
+                <!-- Prepared Message snippet will be shown here -->
+            </div>
+            <div class="space-y-2">
+                <a id="whatsappDirectBtn" href="#" target="_blank" 
+                   class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 px-4 rounded-xl shadow flex items-center justify-center gap-2 text-sm transition-colors">
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                    <span>تأكيد والإرسال في الواتساب الآن</span>
+                </a>
+                <button onclick="copyMessageText()" 
+                        class="w-full bg-gray-100 hover:bg-gray-200 text-gray-700 font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-2 text-xs transition-colors">
+                    <i class="fa-regular fa-copy"></i>
+                    <span id="copyBtnText">نسخ نص الاستمارة فقط</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <script>
+        const WHATSAPP_NUMBER = "966510449281"; // Target number provided
+        function submitForm(e) {
+            e.preventDefault();
+            // 1. Mandatory Fields
+            const fullName = document.getElementById('fullName').value.trim();
+            const phone = document.getElementById('phone').value.trim();
+            const nationality = document.getElementById('nationality').value.trim();
+            const age = document.getElementById('age').value.trim();
+            const iban = document.getElementById('iban').value.trim();
+            // 2. Social Media Fields
+            const socialX = document.getElementById('social_x').value.trim();
+            const socialInsta = document.getElementById('social_instagram').value.trim();
+            const socialTikTok = document.getElementById('social_tiktok').value.trim();
+            const socialSnap = document.getElementById('social_snapchat').value.trim();
+            const socialYT = document.getElementById('social_youtube').value.trim();
+            const socialFB = document.getElementById('social_facebook').value.trim();
+            // 3. Products Links
+            let productLinks = [];
+            for (let i = 1; i <= 10; i++) {
+                const val = document.getElementById(`product_link_${i}`).value.trim();
+                if (val) {
+                    productLinks.push(`   *منتج ${i}:* ${val}`);
+                }
+            }
+            // Notes
+            const notes = document.getElementById('notes').value.trim();
+            // Constructing WhatsApp Message Body
+            let msg = `*طلب تسجل جديد في نظام التسويق بالعمولة* \n`;
+            msg += `*المعالي للخدمات الشاملة*\n`;
+            msg += `----------------------------------------\n\n`;
+            
+            msg += ` *البيانات الأساسية:*\n`;
+            msg += `• *الاسم الكامل:* ${fullName}\n`;
+            msg += `• *رقم الجوال:* ${phone}\n`;
+            msg += `• *الجنسية:* ${nationality}\n`;
+            msg += `• *العمر:* ${age}\n`;
+            msg += `• *رقم الآيبان (IBAN):* \`${iban}\` \n\n`;
+            // Social Section
+            let hasSocial = socialX || socialInsta || socialTikTok || socialSnap || socialYT || socialFB;
+            if (hasSocial) {
+                msg += ` *حسابات التواصل الاجتماعي:*\n`;
+                if (socialX) msg += `• *إكس (تويتر):* ${socialX}\n`;
+                if (socialInsta) msg += `• *إنستغرام:* ${socialInsta}\n`;
+                if (socialTikTok) msg += `• *تيك توك:* ${socialTikTok}\n`;
+                if (socialSnap) msg += `• *سناب شات:* ${socialSnap}\n`;
+                if (socialYT) msg += `• *يوتيوب:* ${socialYT}\n`;
+                if (socialFB) msg += `• *فيسبوك:* ${socialFB}\n`;
+                msg += `\n`;
+            }
+            // Products Section
+            if (productLinks.length > 0) {
+                msg += ` *المنتجات المراد التسويق لها (${productLinks.length}):*\n`;
+                msg += productLinks.join('\n') + `\n\n`;
+            }
+            // Notes Section
+            if (notes) {
+                msg += ` *ملاحظات إضافية:*\n${notes}\n\n`;
+            }
+            msg += `----------------------------------------\n`;
+            msg += ` *تاريخ الطلب:* ${new Date().toLocaleDateString('ar-SA')} - ${new Date().toLocaleTimeString('ar-SA', {hour: '2-digit', minute:'2-digit'})}`;
+            // Save formatted message globally for copy action
+            window.formattedMsg = msg;
+            // Display Message in Modal
+            document.getElementById('modalMessagePreview').innerText = msg;
+            
+            // Build Direct WhatsApp Link
+            const encodedMsg = encodeURIComponent(msg);
+            const waUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodedMsg}`;
+            
+            document.getElementById('whatsappDirectBtn').href = waUrl;
+            // Show Modal
+            document.getElementById('statusModal').classList.remove('hidden');
+            // Optional: Automatically trigger click to open whatsapp directly
+            window.open(waUrl, '_blank');
+        }
+        function closeModal() {
+            document.getElementById('statusModal').classList.add('hidden');
+        }
+        function copyMessageText() {
+            if (!window.formattedMsg) return;
+            
+            // Legacy copy support for iframe compatibility
+            const tempInput = document.createElement("textarea");
+            tempInput.value = window.formattedMsg;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand("copy");
+            document.body.removeChild(tempInput);
+            const copyBtnText = document.getElementById('copyBtnText');
+            copyBtnText.innerText = "تم النسخ بنجاح!";
+            setTimeout(() => {
+                copyBtnText.innerText = "نسخ نص الاستمارة فقط";
+            }, 2000);
+        }
+    </script>
+</body>
+</html>
+```
+
+    <!-- ============================================ -->
+    
+    <!-- ============================================ -->
+    <!-- JAVASCRIPT CODE (from the JS editor)         -->
+    <!-- ============================================ -->
+    <script>
+
+    </script>
+    <!-- ============================================ -->
+    
+</body>
+</html>
